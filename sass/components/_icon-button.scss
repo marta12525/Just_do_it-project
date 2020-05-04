@@ -1,0 +1,7 @@
+.icon-button {
+  color: $page-color;
+}
+
+[class*='icon-']::before {
+  font-weight: bold;
+}

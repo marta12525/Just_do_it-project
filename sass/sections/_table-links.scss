@@ -1,0 +1,46 @@
+.table-links {
+  border-spacing: 0;
+  width: 60%;
+}
+
+.link {
+  border-bottom: solid 1px $background-color;
+
+  a {
+    text-decoration: none;
+    color: rgb(53, 53, 160);
+    font-size: 20px;
+  }
+}
+
+.icon {
+  text-align: right;
+  border-bottom: solid 1px $background-color;
+
+  .icon-links,
+  .icon-trash {
+    opacity: 0;
+  }
+}
+
+.table-data-links {
+  padding: 15px;
+  border-bottom: solid 1px $background-color;
+}
+
+.table-links-row {
+  border-bottom: solid 1px $background-color;
+
+  &:hover {
+    background: $background-color;
+
+    .icon-links,
+    .icon-trash {
+      opacity: 1;
+
+      &:hover {
+        color: $brand-main-color;
+      }
+    }
+  }
+}

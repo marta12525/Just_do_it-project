@@ -1,0 +1,36 @@
+.topbar {
+  font-size: 18px;
+}
+
+.topnav-element-before {
+  position: relative;
+  padding: 20px;
+  color: $text-color;
+  border-left: solid 1px $background-color;
+
+  &:hover {
+    background: $background-color;
+  }
+}
+
+.notification-text,
+.logout-text {
+  display: none;
+}
+
+.icon-notification::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: #f58220;
+  top: 17px;
+  right: 35px;
+  border-radius: 50%;
+}
+
+.profile-wrapper span {
+  color: rgb(6, 65, 92);
+  font-family: $brand-font;
+}

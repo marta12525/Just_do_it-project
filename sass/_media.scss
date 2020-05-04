@@ -1,0 +1,163 @@
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 0;
+    //display: none;
+  }
+
+  .title-page {
+    display: flex;
+  }
+
+  .title {
+    justify-content: center;
+  }
+
+  .title-text {
+    display: none;
+  }
+
+  .hamburger-btn {
+    font-size: 20px;
+    padding: 10px 10px;
+    display: flex;
+    background: $nav-main-color;
+    border-radius: 5px;
+    position: fixed;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .chat {
+    display: none;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .topbar-in-media {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background: $nav-main-color;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: $brand-font;
+
+    .topnav-element-before {
+      padding: 5px 15px;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+
+      .topnav-text {
+        padding: 10px 0;
+      }
+
+      .notification-text,
+      .logout-text {
+        display: flex;
+      }
+
+      .icon-notification::after {
+        top: 10px;
+        right: 160px;
+      }
+
+      .icon-arrow-down {
+        display: none;
+      }
+
+      .icon-topnav {
+        padding: 10px;
+      }
+    }
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .general {
+    margin-top: 20px;
+  }
+
+  .chart img {
+    max-height: 120px;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+    margin: 15px 0;
+  }
+
+  .table-links {
+    width: 100%;
+  }
+
+  .table-general {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .title-chart {
+    padding: 20px;
+  }
+
+  .link a {
+    font-size: 13px;
+  }
+
+  .table-data-links {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+
+  td.icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icons {
+    padding: 15px 0;
+  }
+
+  .sidebar-show {
+    display: flex;
+    max-width: 180px;
+    flex-direction: column;
+    transition: 0.2s;
+
+    .title {
+      display: flex;
+
+      .title-text {
+        display: inline;
+        padding: 0 0 0 9vw;
+        font-size: 23px;
+      }
+
+      .hamburger-btn {
+        left: 1px;
+      }
+    }
+
+    .menu {
+      display: flex;
+
+      .item-menu {
+        width: 180px;
+        font-size: 15px;
+
+        .icon-sidebar {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

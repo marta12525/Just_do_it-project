@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container-big {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $background-color;
+  padding-left: 400px;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: $page-color;
+  width: 100%;
+  position: fixed;
+  padding-right: 400px;
+  border-bottom: solid 1px $background-color;
+}
+
+.pages {
+  background: $page-color;
+  margin: 15px;
+}
+
+.general {
+  margin-top: 79px;
+}
