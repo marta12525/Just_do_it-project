@@ -2,7 +2,7 @@
   font-size: 18px;
 }
 
-.topnav-element-before {
+.topnav-element {
   position: relative;
   padding: 20px;
   color: $text-color;
@@ -18,19 +18,15 @@
   display: none;
 }
 
-.icon-notification::after {
+.orange-dot {
+  color: #eb6e1c;
   position: absolute;
-  content: "";
-  display: block;
-  height: 8px;
-  width: 8px;
-  background-color: #f58220;
   top: 17px;
-  right: 35px;
-  border-radius: 50%;
+  right: 31px;
+  font-size: 13px;
 }
 
 .profile-wrapper span {
-  color: rgb(6, 65, 92);
+  color: #536bf3;
   font-family: $brand-font;
 }
