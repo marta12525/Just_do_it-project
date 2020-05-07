@@ -3,15 +3,14 @@
 @import "normalize";
 @import "layout";
 @import "glyphter";
+@import "media";
 
 /* Components */
 @import "components/icons";
-//@import "components/links";
 @import "components/title-page";
 @import "components/item-menu";
 @import "components/text";
 @import "components/buttons";
-//@import "components/table";
 @import "components/icon-button";
 
 /* Sections */
@@ -23,8 +22,4 @@
 @import "sections/table-links";
 @import "sections/button-addnew";
 
-/* Pages / Views */
-//@import "pages/general";
-//@import "pages/links";
 
-@import "media";

@@ -521,6 +521,202 @@ body {
   content: '\0062';
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 0;
+  }
+  .title-page {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .title {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .title-text {
+    display: none;
+  }
+  .hamburger-btn {
+    font-size: 20px;
+    padding: 10px 10px;
+    display: -ms-flexbox;
+    display: flex;
+    background: #1b1818;
+    border-radius: 5px;
+    position: fixed;
+  }
+  .menu {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .topbar {
+    display: none;
+  }
+  /*
+  .topbar-in-media {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background: $nav-main-color;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: $brand-font;
+
+    .topnav-element-before {
+      padding: 5px 15px;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+
+      .topnav-text {
+        padding: 10px 0;
+      }
+
+      .notification-text,
+      .logout-text {
+        display: flex;
+      }
+
+      .icon-notification::after {
+        top: 10px;
+        right: 160px;
+      }
+
+      .icon-arrow-down {
+        display: none;
+      }
+
+      .icon-topnav {
+        padding: 10px;
+      }
+    }
+  }
+  */
+  .main-container {
+    padding: 0;
+  }
+  .general {
+    margin-top: 20px;
+  }
+  .chart img {
+    max-height: 120px;
+  }
+  .table-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 15px 0;
+  }
+  .table-links {
+    width: 100%;
+  }
+  .table-general {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .title-chart {
+    padding: 20px;
+  }
+  .link a {
+    font-size: 13px;
+  }
+  .table-data-links {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+  td.icon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .icons {
+    padding: 15px 0;
+  }
+  .sidebar-show {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 180px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    transition: 0.2s;
+  }
+  .sidebar-show .title {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar-show .title .title-text {
+    display: inline;
+    padding: 0 0 0 6vw;
+    font-size: 23px;
+  }
+  .sidebar-show .title .hamburger-btn {
+    left: 1px;
+  }
+  .sidebar-show .menu {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar-show .menu .item-menu {
+    width: 180px;
+    font-size: 15px;
+  }
+  .sidebar-show .menu .item-menu .icon-sidebar {
+    padding: 10px;
+  }
+  .sidebar-show .chat {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sidebar-show .chat .manager-title {
+    font-size: 14px;
+  }
+  .sidebar-show .chat .manager img {
+    width: 40px;
+    height: 40px;
+  }
+  .sidebar-show .chat .manager .green-dot {
+    top: 466px;
+    font-size: 15px;
+  }
+  .sidebar-show .chat .manager span {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .topbar-media-show {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    max-width: 180px;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .topbar-media-show .topnav-element {
+    position: relative;
+    color: #a1a1a1;
+    border-top: solid 0.5px #e3e3e3;
+    border-left: none;
+    padding-top: 10px;
+  }
+  .topbar-media-show .topnav-element:hover {
+    background: #353535;
+    border-left: solid 5px #f58220;
+  }
+  .topbar-media-show .orange-dot {
+    right: 138px;
+    top: 7px;
+  }
+}
+
 /* Components */
 .icons {
   color: #a1a1a1;
@@ -843,202 +1039,5 @@ body {
 .button-addnew {
   padding: 10px 25px;
   font-size: 20px;
-}
-
-/* Pages / Views */
-@media (max-width: 768px) {
-  .sidebar {
-    max-width: 0;
-  }
-  .title-page {
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .title {
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .title-text {
-    display: none;
-  }
-  .hamburger-btn {
-    font-size: 20px;
-    padding: 10px 10px;
-    display: -ms-flexbox;
-    display: flex;
-    background: #1b1818;
-    border-radius: 5px;
-    position: fixed;
-  }
-  .menu {
-    display: none;
-  }
-  .chat {
-    display: none;
-  }
-  .topbar {
-    display: none;
-  }
-  /*
-  .topbar-in-media {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    background: $nav-main-color;
-    left: 0;
-    bottom: 0;
-    padding: 0;
-    font-size: 15px;
-    font-family: $brand-font;
-
-    .topnav-element-before {
-      padding: 5px 15px;
-      border: none;
-      display: flex;
-      flex-direction: row;
-      width: 200px;
-
-      .topnav-text {
-        padding: 10px 0;
-      }
-
-      .notification-text,
-      .logout-text {
-        display: flex;
-      }
-
-      .icon-notification::after {
-        top: 10px;
-        right: 160px;
-      }
-
-      .icon-arrow-down {
-        display: none;
-      }
-
-      .icon-topnav {
-        padding: 10px;
-      }
-    }
-  }
-  */
-  .main-container {
-    padding: 0;
-  }
-  .general {
-    margin-top: 20px;
-  }
-  .chart img {
-    max-height: 120px;
-  }
-  .table-wrapper {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin: 15px 0;
-  }
-  .table-links {
-    width: 100%;
-  }
-  .table-general {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .title-chart {
-    padding: 20px;
-  }
-  .link a {
-    font-size: 13px;
-  }
-  .table-data-links {
-    font-size: 13px;
-    padding: 5px 5px;
-  }
-  td.icon {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-  }
-  .icons {
-    padding: 15px 0;
-  }
-  .sidebar-show {
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 180px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    transition: 0.2s;
-  }
-  .sidebar-show .title {
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .sidebar-show .title .title-text {
-    display: inline;
-    padding: 0 0 0 6vw;
-    font-size: 23px;
-  }
-  .sidebar-show .title .hamburger-btn {
-    left: 1px;
-  }
-  .sidebar-show .menu {
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .sidebar-show .menu .item-menu {
-    width: 180px;
-    font-size: 15px;
-  }
-  .sidebar-show .menu .item-menu .icon-sidebar {
-    padding: 10px;
-  }
-  .sidebar-show .chat {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .sidebar-show .chat .manager-title {
-    font-size: 14px;
-  }
-  .sidebar-show .chat .manager img {
-    width: 40px;
-    height: 40px;
-  }
-  .sidebar-show .chat .manager .green-dot {
-    top: 466px;
-    font-size: 15px;
-  }
-  .sidebar-show .chat .manager span {
-    font-size: 15px;
-    padding-left: 10px;
-  }
-  .topbar-media-show {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    max-width: 180px;
-    left: 0;
-    bottom: 0;
-    padding-top: 10px;
-    font-size: 15px;
-  }
-  .topbar-media-show .topnav-element {
-    position: relative;
-    color: #a1a1a1;
-    border-top: solid 0.5px #e3e3e3;
-    border-left: none;
-    padding-top: 10px;
-  }
-  .topbar-media-show .topnav-element:hover {
-    background: #353535;
-    border-left: solid 5px #f58220;
-  }
-  .topbar-media-show .orange-dot {
-    right: 138px;
-    top: 7px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
