@@ -47,8 +47,8 @@
           <h3 class="title manager-title">YOUR MANAGER</h3>
           <div class="manager">
             <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/billy_heat_face-512.png" alt="manager's face">
-            <span class="green-dot">&#11044</span>
-            <span>Mikhael E.</span>
+            <span class="green-dot">&#11044;</span>
+            <span class="manager-name">Mikhael E.</span>
           </div>
         </div>
         <div class="topbar-media">
@@ -60,7 +60,7 @@
           <div class="notification-wrapper topnav-element">
             <i class="icons icon-topnav icon-notification"></i>
             <span class="notification-text topnav-text">Notification</span>
-            <span class="orange-dot">&#11044</span>
+            <span class="orange-dot">&#11044;</span>
           </div>
           <div class="profile-wrapper topnav-element">
             <i class="icons icon-topnav icon-profile"></i>
@@ -76,21 +76,23 @@
       <div class= "main-container">
         <div class="topbar">
           <div class="money-wrapper topnav-element">
-            <i class="icons icon-topnav icon-wallet"></i>
-            <span class="topnav-text">$1,500.00</span>
-            <i class="icon icon-arrow-down"></i>
+            <a href="#">
+              <i class="icons icon-topnav icon-wallet"></i>
+              <span class="topnav-text">$1,500.00</span>
+              <i class="icon icon-arrow-down"></i>
+            </a>
           </div>
           <div class="notification-wrapper topnav-element">
-            <i class="icons icon-topnav icon-notification"></i>
+            <a href="#"><i class="icons icon-topnav icon-notification"></i></a>
             <span class="notification-text topnav-text">Notification</span>
-            <span class="orange-dot">&#11044</span>
+            <span class="orange-dot">&#11044;</span>
           </div>
           <div class="profile-wrapper topnav-element">
             <i class="icons icon-topnav icon-profile"></i>
-            <span class="topnav-text">Leonardo DiCaprio</span>
+            <a href="#"><span class="topnav-text">Leonardo DiCaprio</span></a>
           </div>
           <div class="quit-wrapper topnav-element">
-            <i class="icons icon-topnav icon-quit"></i>
+            <a href="#"><i class="icons icon-topnav icon-quit"></i></a>
             <span class="logout-text topnav-text">Log out</span>
           </div>
         </div>
@@ -137,8 +139,9 @@
               <div class="text title-chart">Earnings chart</div>
               <!-- chart-->
               <div class="chart">
-                <img src="images/chart.png" alt="chart" class="chart__general">
+                <canvas id="myChart"></canvas>
               </div>
+              
             </div>
           </div>
         </div>
@@ -257,21 +260,24 @@
           </div>
           <div class="button-wrapper">
             <button class="button button-addnew" type="button">+ add new</button>
+            <button type="button" class="modalBtn">modal button</button>
           </div>
         </div>
       </div>
     </div>
+    <!--modal-->
     <div class="overlay" id="overlay">
-      <!--modal-->
       <div class="modal" id="myModal">
         <div class="btn-close js--close-modal">x</div>
 
         <h4>Witaj w modalu!</h4>
         <p>Lorem ipsum dolor sit amet...</p>
 
-        <button class="js--close-modal">Okay</button>
+        <button class="js--close-modal" type="button">Okay</button>
       </div>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

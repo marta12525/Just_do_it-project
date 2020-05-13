@@ -1,10 +1,11 @@
 .sidebar {
   background: $nav-main-color;
-  width: 350px;
+  min-width: 15%;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
+  z-index: 2;
 }
 
 .title {
@@ -16,31 +17,31 @@
 .title-text {
   color: $page-color;
   font-family: $main-title-font;
-  font-size: 45px;
-  padding: 0 10%;
+  font-size: 35px;
+  padding: 0 9px;
   width: 100%;
 }
 
 .fa-bars {
-  font-size: 40px;
+  font-size: 30px;
   color: $text-color;
-  padding-top: 40px;
-  padding-right: 40px;
-  display: none;
+  padding-top: 29px;
+  padding-right: 10px;
 }
 
 .icon-sidebar {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .menu-list {
   padding: 0;
+  margin-top: 5px;
 }
 
 .item-menu {
   font-family: $brand-font;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 19px;
 
   &:hover {
     background: rgb(53, 53, 53);
@@ -57,15 +58,17 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #e3e3e3;
+  background-color: $text-color;
+  margin-top: 40px;
 }
 
 .manager-title {
-  padding: 0 30px;
+  padding: 26px 30px;
+  font-size: 18px;
 }
 
 .manager {
-  color: #536bf3;
+  color: #8DBEC8;
   padding: 0 30px;
   align-items: center;
   max-height: 50px;
@@ -77,21 +80,30 @@
   }
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: -13px;
+    margin-left: 6px;
   }
 
   span {
     padding-left: 20px;
+    font-family: $brand-font;
+    font-size: 19px;
+
+    &.manager-name {
+      margin-top: -10px;
+    }
   }
 
   .green-dot {
     color: #5cbd1b;
     position: absolute;
-    left: 48px;
-    top: 563px;
+    left: 56px;
+    top: 643px;
+    font-size: 22px;
   }
 }
 

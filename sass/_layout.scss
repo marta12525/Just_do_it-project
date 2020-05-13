@@ -18,7 +18,11 @@ body {
   flex-direction: column;
   width: 100%;
   background: $background-color;
-  padding-left: 350px;
+  //padding-left: 350px;
+
+  .title {
+    font-size: 25px;
+  }
 }
 
 .topbar {
@@ -28,7 +32,7 @@ body {
   background: $page-color;
   width: 100%;
   position: fixed;
-  padding-right: 350px;
+  //padding-right: 350px;
   border-bottom: solid 1px $background-color;
 }
 
@@ -38,5 +42,12 @@ body {
 }
 
 .general {
-  margin-top: 79px;
+  margin-top: 110px;
+  min-width: 80%;
+  margin-left: 16%;
+}
+
+.pages.links {
+  min-width: 80%;
+  margin-left: 16%;
 }

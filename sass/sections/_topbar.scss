@@ -1,32 +1,88 @@
 .topbar {
-  font-size: 18px;
+  height: 85px;
+  z-index: 1;
+  padding-right: 0;
 }
 
 .topnav-element {
   position: relative;
-  padding: 20px;
+  padding: 30px 0;
   color: $text-color;
   border-left: solid 1px $background-color;
+  font-size: 22px;
 
   &:hover {
     background: $background-color;
   }
 }
 
-.notification-text,
 .logout-text {
   display: none;
 }
 
-.orange-dot {
-  color: #eb6e1c;
-  position: absolute;
-  top: 17px;
-  right: 31px;
-  font-size: 13px;
+.money-wrapper {
+  padding-right: 43px;
+  padding-left: 43px;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  span {
+    font-size: 27px;
+  }
+
+  .topnav-text {
+    font-size: 30px;
+    padding-top: 1px;
+  }
 }
 
-.profile-wrapper span {
-  color: #536bf3;
-  font-family: $brand-font;
+.notification-wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .icons {
+    font-size: 25px;
+  } 
+
+  .notification-text {
+    display: none;
+  }
+
+  .orange-dot {
+    color: #eb6e1c;
+    position: absolute;
+    top: 23px;
+    right: 29px;
+    font-size: 14.5px;
+  }
+}
+
+.profile-wrapper {
+  width: 255px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-left: 15px;
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 17px;
+    color: #536bf3;
+    font-family: $brand-font;
+  }
+}
+
+.quit-wrapper {
+  padding-right: 17px;
+  padding-left: 20px;
+}
+
+.icon-arrow-down {
+  border: none !important;
 }

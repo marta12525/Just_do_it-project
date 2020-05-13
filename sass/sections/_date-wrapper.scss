@@ -1,15 +1,27 @@
 .date-wrapper {
   text-align: center;
   border-bottom: solid 1px $background-color;
-  padding: 25px;
+  padding: 52px;
+  font-size: 22px;
 
   .input-wrapper {
     border: solid 1px $background-color;
     padding: 10px;
+    width: 240px;
+    height: 60px;
+    margin-top: 2px;
   }
 }
 
 .button-refresh {
   padding: 12px 15px;
-  margin: 5px;
+  margin: 6px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  margin-right: -10px;
+
+  i {
+    font-size: 25px;
+  }
 }
