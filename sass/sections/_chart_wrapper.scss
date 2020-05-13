@@ -4,13 +4,17 @@
 
 .title-chart {
   font-family: $brand-font;
-  padding: 40px 250px;
+  padding: 40px 320px;
 }
 
 .chart {
-  text-align: center;
-
-  img {
-    max-height: 500px;
-  }
+  position: relative;
+  width: 60%;  
+  height: 30%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  top: 60px
 }
+
+
