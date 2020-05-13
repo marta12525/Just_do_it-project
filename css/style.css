@@ -399,6 +399,10 @@ body {
   margin-left: 16%;
 }
 
+.overlay {
+  display: none;
+}
+
 @font-face {
   font-family: 'Glyphter';
   src: url("../vendor/fonts/Glyphter.eot");
