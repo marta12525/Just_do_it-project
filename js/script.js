@@ -8,7 +8,7 @@ document.querySelector('.hamburger-btn').addEventListener('click', function (e) 
   e.preventDefault();
   toggleMenu();
 });
-
+/*
 //modals
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');
@@ -48,9 +48,9 @@ document.querySelector('.modalBtn').addEventListener('click', function (e) {
   e.preventDefault();
   openModal('#myModal');
 });
+*/
 
 //chart
-
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const chart = new Chart(ctx, {
@@ -87,3 +87,5 @@ const chart = new Chart(ctx, {
   responsive: true,
   maintainAspectRatio: false,
 });
+
+chart();
