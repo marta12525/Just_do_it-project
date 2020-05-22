@@ -51,7 +51,16 @@
       color: $page-color;
     }
   }
+
+  a.link-sidebar {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+   }
 }
+
+
 
 .menu::after {
   content: "";
@@ -73,6 +82,7 @@
   align-items: center;
   max-height: 50px;
   display: flex;
+  cursor: pointer;
 
   &:hover {
     background: rgb(53, 53, 53);
